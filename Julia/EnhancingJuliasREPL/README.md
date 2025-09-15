@@ -419,7 +419,7 @@ Exit Julia, and in your terminal session type the following command.
 ```bash
 julia -q -J'/idealy/full/path/to/julia_enhanced.so'
 ```
-The Julia REPL should open as before, except all our enhancements are precompiled! But it's a bummer if we need to type that long command every time. So you will likely need to make an alias. This process varies based on your OS. Something like the following should work on Linux or macOS machines using bash and a `~/.bashrc` file.
+The Julia REPL should open as before, except all our enhancements are precompiled! Additionally, you may have noticed that previously, when starting the Julia REPL, two banners were being printed. The `-q` flag silences the default Julia banner, so now we only see our custom Julia banner. But it's a bummer if we need to type that long command every time. So you will likely need to make an alias. This process varies based on your OS. Something like the following should work on Linux or macOS machines using bash and a `~/.bashrc` file.
 ```bash
 alias julia="julia -q -J'/full/path/to/julia_enhanced.so'"
 ```
